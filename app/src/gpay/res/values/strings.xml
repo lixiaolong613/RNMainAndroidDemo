@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RnDemo GPay</string>
+    <string name="gpay_welcome">Welcome to GPay Version!</string>
+    <string name="gpay_feature">GPay Features Available</string>
+</resources>
