@@ -1,0 +1,3 @@
+[submodule "sublib/MyLibrary"]
+	path = sublib/MyLibrary
+	url = git@github.com:lixiaolong613/SubModuleDemo.git
