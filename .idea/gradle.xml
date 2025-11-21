@@ -26,6 +26,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/sublib/MyLibrary" />
             <option value="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin" />
             <option value="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/react-native-gradle-plugin" />
             <option value="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/settings-plugin" />

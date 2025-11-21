@@ -44,4 +44,7 @@ rootProject.name = "RnDemo"
 include(":app")
 // 4️⃣ （再次显式包含插件工程，兼容 Gradle 的解析阶段）
 includeBuild("../node_modules/@react-native/gradle-plugin")
+include(":MyLibrary")
+project(":MyLibrary").projectDir = file("sublib/MyLibrary")
+
 
