@@ -2,6 +2,7 @@ package com.example.rndemo
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,9 +25,33 @@ class MainActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
             insets
         }
 
+        // 使用 SubModuleDemoAPI
+        testSubModule()
+
         binding.tvContent.setOnClickListener {
             showRNFragment()
 //            showRNActivity()
+        }
+    }
+
+    private fun testSubModule() {
+        try {
+            // 初始化 SubModule
+            com.common.SubModuleDemoAPI.initialize()
+
+            // 获取问候语
+            val greeting = com.common.SubModuleDemoAPI.getGreeting()
+            Log.d("MainActivity", "Greeting from SubModule: $greeting")
+
+            // 获取版本信息
+            val version = com.common.SubModuleDemoAPI.getVersion()
+            Log.d("MainActivity", "SubModule Version: $version")
+
+            // 测试计算功能
+            val result = com.common.SubModuleDemoAPI.add(5, 3)
+            Log.d("MainActivity", "SubModule calculation 5 + 3 = $result")
+        } catch (e: Exception) {
+            Log.e("MainActivity", "Error using SubModule: ${e.message}")
         }
     }
 

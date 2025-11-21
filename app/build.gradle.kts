@@ -129,7 +129,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("com.facebook.react:react-android")
     implementation("com.facebook.react:hermes-android")
-    implementation(project(":MyLibrary"))
+    implementation(project(":sublib:MyLibrary:submodule"))
 }
 react {
       // 启用自动链接需要添加以下行，参考： https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
